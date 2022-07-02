@@ -1,9 +1,8 @@
 import scrapy
-from scrapy.linkextractors.lxmlhtml import LxmlLinkExtractor
 
 
 class DallasSpider(scrapy.Spider):
-    name = 'titles'
+    name = 'dallas'
     allowed_domains = ['dallas.craigslist.org']
     start_urls = [
         'https://dallas.craigslist.org/search/jjj',
